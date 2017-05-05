@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Wayne Cheng">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="src/w-favicon.ico">
 
 	<!-- Google Font Links -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -17,12 +16,77 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<h1 id="page-title"> 
+	<!-- <img src="assets/images/Starwars-logo.png"> -->
+	<img src="assets/images/Star_Wars_Yellow_Logo.svg">
+	<!-- <img src="assets/images/starwars-1.svg"> -->
+	<!-- <img src="assets/images/starwars-horizontal.svg">  -->
+Game</h1>
+<div class="char-container good">
+
+	<div class="char-wrap good" id="c3po">
+		<span class="hp">140</span>
+		<img class="char good c3po" src="assets/images/starwarsC3PO.svg" alt="c3po">
+		 </div>
+	<div class="char-wrap good" id="r2-d2">
+		<span class="hp">120</span>
+		<img class="char good r2-d2" src="assets/images/starwarsr2d2.svg" alt="r2-d2"> 
+		</div>
+	<div class="char-wrap good" id="yoda">
+		<span class="hp">205</span>
+		<img class="char good yoda" src="assets/images/starwarsyoda.png" alt="yoda"> 
+		</div>
+	<div class="char-wrap good" id="bb-8">
+		<span class="hp">150</span>
+		<img class="char good bb-8" src="assets/images/starwarsbb8.svg" alt="bb-8"> 
+		</div>
+	<div class="char-wrap good" id="chewbacca">
+		<span class="hp">200</span>
+		<img class="char good chewbacca" src="assets/images/starwarschewbacca.svg" alt="chewbacca"> 
+		</div>
+</div>
+
+<div id="arena">
+	
+	<div id="good-area" class="arena-area" status="empty">
+		<div class="arena-hp"></div>
+		</div>
+	<div id="defender-area" class="arena-area" status="empty">
+		<div class="arena-hp"></div>
+		</div>
+
+	<button id="attack" type="button">Attack!</button>
+	<button id="restart" type="button">Restart</button>
+</div>
 
 
 
+<div class="char-container bad">
+	<div class="char-wrap bad" id="emperor">
+		<span class="hp">110</span>
+		<img class="char bad emperor" src="assets/images/starwarsemperor.svg" alt="emperor"> 
+		</div>
+	<div class="char-wrap bad" id="stormtrooper">
+		<span class="hp">90</span>
+		<img class="char bad stormtrooper" src="assets/images/starwarsstormtrooper.svg" alt="stormtrooper"> 
+		</div>
+	<div class="char-wrap bad" id="darth-vader">
+		<span class="hp">160</span>
+		<img class="char bad darth-vader" src="assets/images/starwarsdarthvader.svg" alt="darth-vader"> 
+		</div>
+	<div class="char-wrap bad" id="darth-maul">
+		<span class="hp">120</span>
+		<img class="char bad darth-maul" src="assets/images/starwarsdarthmaul.svg" alt="darth_maul"> 
+		</div>
+	<div class="char-wrap bad" id="boba-fett">
+		<span class="hp">110</span>
+		<img class="char bad boba-fett" src="assets/images/starwarsbobafett.svg" alt="boba-fett"> 
+		</div>
+</div>
 
 	<!-- JS Links -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="assets/javacsript/game.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/javascript/game.js" type="text/javascript" charset="utf-8"></script>
+	<script></script>
 </body>
 </html>
