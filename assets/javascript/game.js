@@ -30,10 +30,14 @@ $(document).ready(function(){
 			var uImg = $('#good-area').find('img');
 			$(uSel).append(uImg);
 
+			
 			$(eSel).show();
+			// $(eSel).css('display','inline-block')
 			var eImg = $('#bad-area').find('img');
 			$(eSel).append(eImg);
+			$('.char-wrap').css('display','inline-block');
 
+			// reset HP text in hp bars
 			$('.hp-text').text('');
 
 			$('.hp-bar').css({
@@ -128,8 +132,18 @@ function userSelect(){
 	}
 
 function nextEnemy(){
+		var eSel = '#'+ enemy;
 		// Remove enemy img form arena area
+		// var badHold = $('#bad-area img').css('opacity', 0.5);
+		// $('.char-container.bad').append(badHold);
+		var eImg = $('#bad-area').find('img');
+		$(eSel).append(eImg);
 		$('#bad-area img').css('display','none');
+
+			// $(eSel).show();
+			// $(eSel).css('display','inline-block')
+			$(eSel).append(eImg);
+			var eImg = $('#bad-area').find('img');
 
 		// Change background color of attack button
 		$('#attack').removeClass('inactive');

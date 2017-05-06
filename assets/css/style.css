@@ -236,3 +236,6 @@ button.inactive:hover {background-color: #95a5a6; }
 	line-height: 1.1em;
 	word-spacing: 2px;
 }
+#holding-zone {
+	display: none;
+}
