@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Week 4 Game</title>
+	<title>Star Wars Game</title>
 	<meta charset="UTF-8">
 	<meta name="author" content="Wayne Cheng">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,12 +16,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<h1 id="page-title"> 
-	<!-- <img src="assets/images/Starwars-logo.png"> -->
-	<img src="assets/images/Star_Wars_Yellow_Logo.svg">
-	<!-- <img src="assets/images/starwars-1.svg"> -->
-	<!-- <img src="assets/images/starwars-horizontal.svg">  -->
-Game</h1>
+<h1 id="page-title"> <img src="assets/images/Star_Wars_Yellow_Logo.svg" alt="Star Wars"> Game</h1>
 <div class="char-container good">
 
 	<div class="char-wrap good" id="c3po">
@@ -49,16 +44,28 @@ Game</h1>
 <div id="arena">
 	
 	<div id="good-area" class="arena-area" status="empty">
-		<div class="arena-hp"></div>
-		</div>
-	<div id="defender-area" class="arena-area" status="empty">
-		<div class="arena-hp"></div>
-		</div>
+		<div class="arena-hp">
+			<p class="hp-text good"></p>
+			<div class="hp-bar good"> </div>
+			</div>
+			</div>
+	<div id="bad-area" class="arena-area" status="empty">
+		<div class="arena-hp">
+			<p class="hp-text bad"></p>
+			<div class="hp-bar bad">
+			</div>
+			</div>
+			</div>
 
-	<button id="attack" type="button">Attack!</button>
-	<button id="restart" type="button">Restart</button>
+	<button id="attack" class="inactive" type="button">Attack!</button>
+	<button id="restart" class="inactive" type="button">Restart</button>
 </div>
 
+
+<div class="feed-container">
+	<p class="feed" id="feed1">Select your hero above.</p>
+	<p class="feed" id="feed2">Beat each character to defeat the dark side and win!</p>
+</div>
 
 
 <div class="char-container bad">
